@@ -11,9 +11,20 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
    <%= render "layouts/navigation" %>
   <div class="ui container">
+  <%= render "layouts/messages" %>
     <%= yield %>
     </div>
   </body>
 </html>
+
+<script>
+
+# $( "#target" ).click(function() {
+#   alert( "Handler called." );
+# });
+</script>
+
